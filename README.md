@@ -1,0 +1,1 @@
+Movies CTF - SQLi on /movie?movieID= and auth tampering via admin=true in login request.\nRun with: py -3 -m venv .venv; .\.venv\Scripts\Activate.ps1; py -3 -m pip install -r requirements.txt; py -3 app.py\n
