@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ title or "Movies CTF" }}</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="/">Movies CTF</a>
+      <nav>
+        <a href="/movies">Movies</a>
+        <a href="/login" style="float:right">Login</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="container small">
+    <p>Local vulnerable CTF — do not expose publicly.</p>
+  </footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>

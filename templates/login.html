@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Admin Login</h1>
+  <form id="loginForm" method="post" action="/login">
+    <label>Username<br><input name="username" value="bob"></label><br>
+    <label>Password<br><input name="password" value="notbob" type="password"></label><br>
+    <p>Hint: you can tamper with the request before sending.</p>
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}

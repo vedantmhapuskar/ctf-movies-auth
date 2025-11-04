@@ -1,1 +1,10 @@
-
+{% extends "base.html" %}
+{% block content %}
+  <h1>Welcome to Movies CTF</h1>
+  <p>Two intentional vulnerabilities:</p>
+  <ol>
+    <li>SQL injection on <code>/movie?movieID=</code></li>
+    <li>Authentication tampering: include <code>admin=true</code> in the login request to bypass password check.</li>
+  </ol>
+  <p><a href="/movies">View movies</a></p>
+{% endblock %}
